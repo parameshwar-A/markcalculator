@@ -6,7 +6,15 @@ def get_input():
 
     return data
 
-def sorter(data):
+def sorter_asc(data):
+    for i in range(0,len(data)):
+        for j in range(0,len(data)):
+            if data[i]<data[j]:
+                data[i],data[j]=data[j],data[i]
+            else:
+                continue
+    return data
+def sorter_dsc(data):
     for i in range(0,len(data)):
         for j in range(0,len(data)):
             if data[i]<data[j]:
@@ -15,7 +23,8 @@ def sorter(data):
                 continue
     return data
 
-print(sorter(get_input()))
+
+print(sorter_asc(get_input()))
  
 
 

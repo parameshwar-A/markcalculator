@@ -7,12 +7,7 @@ def get_input():
     return data
 
 def sorter(data):
-    for i in range(0,len(data)):
-        for j in range(0,len(data)):
-            if data[i]<data[j]:
-                data[i],data[j]=data[j],data[i]
-            else:
-                continue
+    data.sort()
     return data
 
 print(sorter(get_input()))

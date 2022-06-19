@@ -1,3 +1,4 @@
+#This get_input method is to get the inputs from user via stdin
 def get_input():
     n=int(input("Enter the number of elements"))
     data=[]
@@ -5,11 +6,12 @@ def get_input():
         data.append(int(input()))
 
     return data
-
+#This sorter_asc method is to sort the marks based on ascending order
 def sorter_asc(data):
     data.sort()
     return data
 
+#This sorter_dsc method is to sort the marks based on descending order
 def sorter_dsc(data):
     for i in range(0,len(data)):
         for j in range(0,len(data)):
